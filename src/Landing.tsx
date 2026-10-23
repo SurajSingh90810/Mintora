@@ -224,8 +224,6 @@ const CornerMarkers: React.FC = () => (
   </div>
 );
 
-
-
 const Vignette: React.FC = () => (
   <div
     className="fixed inset-0 pointer-events-none z-[2]"
@@ -268,7 +266,6 @@ const IncomeSectionBackground: React.FC = () => {
       {/* Deep core glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-gradient-radial from-[#d6621a]/15 via-[#d6621a]/5 to-transparent blur-[80px] opacity-60" />
 
-    
       {/* Falling Data Beams */}
       {beams.map((beam) => (
         <div
@@ -2680,17 +2677,16 @@ const Landing: React.FC = () => {
 
             <div className="flex items-center gap-3 pr-1 sm:pr-2 relative z-10">
               <MagneticButton
-                onClick={() => (window.location.href = "/dashboard")}
+                onClick={() =>
+                  (window.location.href = "https://www.nft.mintora.org/")
+                }
                 className="group/btn hidden sm:flex items-center gap-2.5 bg-gradient-to-r from-[#1c1813] to-[#0c0b09] border border-[#d6621a]/40 px-6 py-3 rounded-full hover:border-[#d6621a] hover:shadow-[0_0_20px_rgba(214,98,26,0.25)] transition-all duration-300 cursor-pointer overflow-hidden relative"
               >
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover/btn:animate-[shimmer_1.5s_infinite]" />
 
-                <Terminal
-                  size={15}
-                  className="text-[#d6621a] group-hover/btn:text-white transition-colors relative z-10"
-                />
+                
                 <span className="text-[11px] font-bold uppercase tracking-[0.15em] text-white/90 group-hover/btn:text-white relative z-10">
-                  Dashboard
+                  Launch App
                 </span>
               </MagneticButton>
 
